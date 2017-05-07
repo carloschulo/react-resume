@@ -10,7 +10,7 @@ class Header extends Component {
       <div className="Header-Container">
         <div className="Header-content">
           <h1 className="Header-name">{basics.name}</h1>
-          <h4 className="Header-label">{basics.label}</h4>
+          <h4 className="Header-label">{basics.label}, currently in {basics.location.city}🗽</h4>
         {/*<img className="Header-image" src={basics.picture} alt="This is me!"/>*/} <p className="Header-desc">{basics.summary}</p>
         <h4>Skill Set:</h4>
         <ul className="Skills-list">

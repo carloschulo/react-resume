@@ -3,7 +3,7 @@
   flex-direction: row;
 }
 
-.App-logo {
+/*.App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
@@ -11,13 +11,12 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+}*/
 .Header-Container, .Card-Container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
   padding: 30px;
 }
 
@@ -25,8 +24,13 @@
   background: #fafafa;
   width: 40%;
 }
+.Card-Container {
+  background: #54E7C7;
+  width: 60%;
+  /*overflow: auto;*/
+}
 .Header-Container .Header-content {
-  margin: 0 127px 0 30px;
+  /*margin: 0 127px 0 30px;*/
   display: flex;
   flex-direction: column;
 }
@@ -48,22 +52,31 @@
   border-radius: 2px;
 }
 
-.Card-Container {
-  background: #54E7C7;
-  width: 60%;
+@media (min-width: 991px) {
+  .Card-Container {
+    overflow: auto;
+  }
+  .Header-Container, .Card-Container {
+    
+    height: 100vh;
+    
+  }
 }
-
 @media (max-width: 990px) {
   .App{
     flex-direction: column;
   }
   .Header-Container, .Card-Container {
     width: 100vw;
+    /*height: 100vh;*/
   }
   .Header-Container{
-    height: 100vh;
     font-size: 24px;
+    height: 100vh;
   }
+  /*.Card-Container{
+    height: 100%;
+  }*/
 }
 @media (max-width: 450px) {
   .Header-Container{
