@@ -1,0 +1,98 @@
+
+{
+  "basics": {
+    "name": "Carlos Henriquez",
+    "label": "Front End Developer",
+    "picture": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAArqAAAAJDE2YTU4NGM3LWI5ZmEtNGQyNS1hMGVkLTAwYTJhOTFmMTkwNA.jpg",
+    "email": "carlos@carlosrh.com",
+    "phone": "(301) 512-5796",
+    "website": "https://carlosrh.com/",
+    "summary": "Carlos is currently a Front End Developer at The Children's Place working on their e-commerce platform.",
+    "location": {
+      "address": "NO Street addres",
+      "postalCode": "100012",
+      "city": "NYC",
+      "countryCode": "US",
+      "region": "New York"
+    },
+    "profiles": [{
+      "network": "Twitter",
+      "username": "carloschulo",
+      "url": "http://twitter.com/carloschulo"
+    }]
+  },
+  "work": [{
+    "company": "The Children's Place",
+    "position": "Front End Developer",
+    "website": "http://www.childrensplace.com/",
+    "startDate": "2017-01-01",
+    "endDate": "Present",
+    "summary": "Currently working on the future of E-commerce",
+    "highlights": [
+      "Working in both new and legacy environments, supporting React JS and Vanilla Javascript."
+    ]
+  }],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "website": "http://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description...",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "University of Maryland",
+    "area": "Business",
+    "studyType": "Bachelor",
+    "startDate": "2003-09-01",
+    "endDate": "2009-05-01",
+    "gpa": "3.0",
+    "courses": [
+      "Java - Basic SQL"
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "website": "http://publication.com",
+    "summary": "Description..."
+  }],
+  "skills": {
+    "name": "Web Development",
+    "level": "Mid-Level",
+    "keywords": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "React JS",
+      "Node JS",
+      "SASS",
+      "ES6"
+    ]
+  },
+  "languages": [{
+    "name": "English",
+    "level": "Native speaker"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference..."
+  }]
+}

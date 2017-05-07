@@ -1,0 +1,83 @@
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.Header-Container, .Card-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 30px;
+}
+
+.Header-Container {
+  background: #fafafa;
+  width: 40%;
+}
+.Header-Container .Header-content {
+  margin: 0 127px 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+.Header-Container .Header-name {
+  font-weight: 900;
+  color: #4a4a4a;
+}
+.Header-Container .Skills-list {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+.Header-Container .Skills-list .Skills-chips {
+  margin: 3px 5px 3px 0;
+  background: #3b80fe;
+  color: white;
+  padding: 9px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+}
+
+.Card-Container {
+  background: #54E7C7;
+  width: 60%;
+}
+
+@media (max-width: 990px) {
+  .App{
+    flex-direction: column;
+  }
+  .Header-Container, .Card-Container {
+    width: 100vw;
+  }
+  .Header-Container{
+    height: 100vh;
+    font-size: 24px;
+  }
+}
+@media (max-width: 450px) {
+  .Header-Container{
+    font-size: 18px;
+  }
+  .Header-Container .Header-content {
+    margin-top: -100px;
+  }
+  .Header-Container .Skills-list .Skills-chips {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 3px 5px 3px 0;
+    padding: 9px;
+  }
+
+}
+
