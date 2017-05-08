@@ -8,15 +8,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 30px;
 }
 
 .Header-Container {
   background: #fafafa;
   width: 40%;
+  padding: 30px;
 }
 .Card-Container {
-  background: #54E7C7;
+  /*background: #54E7C7;*/
   width: 60%;
   /*overflow: auto;*/
 }
@@ -42,6 +42,28 @@
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   border-radius: 2px;
 }
+.Card-content{
+  width: 100%;
+  /*background: #ffab91;*/
+}
+
+.Jobs-container{
+  background: #54E7C7;
+  color: #fafafa;
+  width: 100%;
+  height: 60vh;
+  padding: 50px;
+}
+.jobs-current {
+  font-size: 14px;
+}
+.jobs-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
 
 @media (min-width: 991px) {
   .Card-Container {

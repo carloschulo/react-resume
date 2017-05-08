@@ -23,15 +23,54 @@
   },
   "work": [{
     "company": "The Children's Place",
+    "current": true,
     "position": "Front End Developer",
     "website": "http://www.childrensplace.com/",
-    "startDate": "2017-01-01",
+    "startDate": "January 2017",
     "endDate": "Present",
     "summary": "Currently working on the future of E-commerce",
     "highlights": [
       "Working in both new and legacy environments, supporting React JS and Vanilla Javascript."
-    ]
-  }],
+    ]},
+    {
+    "company": "Deloitte",
+    "current": false,
+    "position": "Front End Developer",
+    "website": "http://www.deloitte.com",
+    "startDate": "September 2013",
+    "endDate": "December 2016",
+    "summary": "Work with the Deloitte IT Innovation team to create apps that eliminate manual processes within IT.",
+    "highlights": [
+      "Developed tools using JavaScript, HTML5/CSS3/SASS, SQL, and PHP.",
+      "Developed an Asset Management tool that automates the laptop shipping process.",
+      "Took over development of Web App used by all internal IT in the US and India, that brings together all important end-user information by the swipe of a badge into one UI."
+    ]}, 
+    {
+    "company": "Comtech",
+    "current": false,
+    "position": "Video Teleconference Engineer",
+    "website": "http://www.comtechllc.com/",
+    "startDate": "April 2013",
+    "endDate": "August 2013",
+    "summary": "Video Engineer Contractor with the General Services Administration (GSA).",
+    "highlights": [
+      "Developed SQL reports, pulling metrics for leadership.",
+      "Maintenance of data, video streaming, content delivery, and network hardware systems.",
+      "Configured and installed various VTC units, streaming servers, VTC appliances, and media players."
+    ]},
+    {
+    "company": "District of Columbia Public Schools",
+    "current": false,
+    "position": "Developer",
+    "website": "https://dcps.dc.gov/",
+    "startDate": "December 2011",
+    "endDate": "April 2013",
+    "summary": "Developed internal sites used by School Staff to access student data using HTML/CSS, JavaScript, SQL DB and Quickbase.",
+    "highlights": [
+      "Created a Responsive Frontend dashboard that displayed student data entry errors, making sure that the dashboard was compatible across all browsers.",
+      "Developed a Frontend account management system for User Account creations and modifications."
+    ]}
+  ],
   "volunteer": [{
     "organization": "Organization",
     "position": "Volunteer",
