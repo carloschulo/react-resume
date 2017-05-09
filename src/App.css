@@ -2,7 +2,22 @@
   display: flex;
   flex-direction: row;
 }
-
+.App-logo {
+   animation: App-logo-spin infinite 20s linear;
+   height: 40px;
+ }
+ @keyframes App-logo-spin {
+   from { transform: rotate(0deg); }
+   to { transform: rotate(360deg); }
+ }
+ .made-with-react {
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   font-size: 12px;
+   position: absolute;
+   top: 5%;
+ }
 .Header-Container, .Card-Container {
   display: flex;
   justify-content: center;
@@ -14,11 +29,10 @@
   background: #fafafa;
   width: 40%;
   padding: 30px;
+  position: relative;
 }
 .Card-Container {
-  /*background: #54E7C7;*/
   width: 60%;
-  /*overflow: auto;*/
 }
 .Header-Container .Header-content {
   /*margin: 0 127px 0 30px;*/
@@ -28,6 +42,12 @@
 .Header-Container .Header-name {
   font-weight: 900;
   color: #4a4a4a;
+}
+.Header-Container .Header-label {
+  font-weight: 300;
+}
+.Header-Container .Header-desc {
+  font-weight: 200;
 }
 .Header-Container .Skills-list {
   display: flex;
@@ -44,24 +64,32 @@
 }
 .Card-content{
   width: 100%;
-  /*background: #ffab91;*/
 }
 
 .Jobs-container{
   background: #54E7C7;
   color: #fafafa;
   width: 100%;
-  height: 60vh;
+  /*height: 90%;*/
   padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .jobs-current {
   font-size: 14px;
+  font-weight: 300;
 }
-.jobs-flex{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
+.jobs-flex div{
+  font-weight: 400;
+}
+.job-summary {
+  line-height: 1.5;
+}
+.job-highlights {
+  list-style: none;
+  font-weight: 200;
 }
 
 
@@ -72,9 +100,7 @@
   .Header-Container, .Card-Container {
     height: 100vh;
   }
-  .Header-Container {
-    /*height: 100vh;*/
-  }
+ 
   .Card-content{
     height: 100vh;
   }
@@ -85,15 +111,11 @@
   }
   .Header-Container, .Card-Container {
     width: 100vw;
-    /*height: 100vh;*/
   }
   .Header-Container{
     font-size: 24px;
     height: 100vh;
   }
-  /*.Card-Container{
-    height: 100%;
-  }*/
 }
 @media (max-width: 450px) {
   .Header-Container{
@@ -108,6 +130,4 @@
     margin: 3px 5px 3px 0;
     padding: 9px;
   }
-
 }
-
