@@ -7,7 +7,7 @@
     "email": "carlos@carlosrh.com",
     "phone": "(301) 512-5796",
     "website": "https://carlosrh.com/",
-    "summary": "Carlos is currently a Front End Developer at The Children's Place working on their e-commerce platform.",
+    "summary": "Carlos is a Front End Developer at The Children's Place working on their e-commerce platform.",
     "location": {
       "address": "NO Street addres",
       "postalCode": "100012",
@@ -28,9 +28,13 @@
     "website": "http://www.childrensplace.com/",
     "startDate": "January 2017",
     "endDate": "Present",
-    "summary": "Currently working on the future of E-commerce",
+    "summary": "Responsible for turning whiteboard sketches into working prototypes, and transforming design mockups into user interfaces",
     "highlights": [
-      "Working in both new and legacy environments, supporting React JS and Vanilla Javascript."
+      "Maintain both new and legacy environments, supporting React JS and Vanilla Javascript code base.",
+      "Update site content inside IBM WebSphere Ecommerce Content Management System.",
+      "Optimize performance of front-end performance and code maintainability.",
+      "Integrate created code with other technologies, including web services, java back-end systems, content management systems, etc.",
+      "Collaborate with backend developers and creative designers to create new site features as needed and to troubleshoot and solve problems."
     ]},
     {
     "company": "Deloitte",
@@ -39,9 +43,9 @@
     "website": "http://www.deloitte.com",
     "startDate": "September 2013",
     "endDate": "December 2016",
-    "summary": "Work with the Deloitte IT Innovation team to create apps that eliminate manual processes within IT.",
+    "summary": "Work with the Deloitte IT Innovation team to create apps that eliminate manual processes within IT",
     "highlights": [
-      "Developed tools using JavaScript, HTML5/CSS3/SASS, SQL, and PHP.",
+      "Developed tools using JavaScript, HTML5/CSS3/SASS, and SQL.",
       "Developed an Asset Management tool that automates the laptop shipping process.",
       "Took over development of Web App used by all internal IT in the US and India, that brings together all important end-user information by the swipe of a badge into one UI."
     ]}, 
@@ -52,7 +56,7 @@
     "website": "http://www.comtechllc.com/",
     "startDate": "April 2013",
     "endDate": "August 2013",
-    "summary": "Video Engineer Contractor with the General Services Administration (GSA).",
+    "summary": "Video Engineer Contractor with the General Services Administration",
     "highlights": [
       "Developed SQL reports, pulling metrics for leadership.",
       "Maintenance of data, video streaming, content delivery, and network hardware systems.",
@@ -65,10 +69,10 @@
     "website": "https://dcps.dc.gov/",
     "startDate": "December 2011",
     "endDate": "April 2013",
-    "summary": "Developed internal sites used by School Staff to access student data using HTML/CSS, JavaScript, SQL DB and Quickbase.",
+    "summary": "Developed internal sites used by School Staff to access student data using HTML/CSS, JavaScript, SQL DB and Quickbase",
     "highlights": [
-      "Created a Responsive Frontend dashboard that displayed student data entry errors, making sure that the dashboard was compatible across all browsers.",
-      "Developed a Frontend account management system for User Account creations and modifications."
+      "Created a Responsive Frontend dashboard that displayed student data entry errors, converting raw data into actionable data used by school staff.",
+      "Developed a Frontend account management system for User Account creations and modifications in the student data system."
     ]}
   ],
   "volunteer": [{
