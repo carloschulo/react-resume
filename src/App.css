@@ -1,24 +1,52 @@
 .App {
   display: flex;
   flex-direction: row;
+  position: relative;
+  overflow: hidden;
 }
+
 .App-logo {
-   animation: App-logo-spin infinite 20s linear;
-   height: 40px;
- }
- @keyframes App-logo-spin {
-   from { transform: rotate(0deg); }
-   to { transform: rotate(360deg); }
- }
- .made-with-react {
-   display: flex;
-   align-items: center;
-   flex-direction: row;
-   font-size: 12px;
-   position: absolute;
-   top: 5%;
- }
-.Header-Container, .Card-Container {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App__pages{
+  position: absolute;
+  left: 15%;
+  top: 0;
+  list-style: none;
+  display: flex;
+}
+
+.App__pages li {
+  padding: 20px;
+}
+
+.App__pages a {
+  text-decoration: none;
+  color: #333;
+}
+
+.made-with-react {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 10px;
+  position: absolute;
+  top: 1%;
+}
+
+.Header-Container,
+.Card-Container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,29 +59,36 @@
   padding: 30px;
   position: relative;
 }
+
 .Card-Container {
   width: 60%;
 }
+
 .Header-Container .Header-content {
   /*margin: 0 127px 0 30px;*/
   display: flex;
   flex-direction: column;
 }
+
 .Header-Container .Header-name {
   font-weight: 900;
   color: #4a4a4a;
 }
+
 .Header-Container .Header-label {
   font-weight: 300;
 }
+
 .Header-Container .Header-desc {
   font-weight: 200;
 }
+
 .Header-Container .Skills-list {
   display: flex;
   flex-flow: row wrap;
   list-style: none;
 }
+
 .Header-Container .Skills-list .Skills-chips {
   margin: 3px 5px 3px 0;
   background: #3b80fe;
@@ -62,11 +97,12 @@
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   border-radius: 2px;
 }
-.Card-content{
+
+.Card-content {
   width: 100%;
 }
 
-.Jobs-container{
+.Jobs-container {
   background: #54E7C7;
   color: #fafafa;
   width: 100%;
@@ -77,48 +113,54 @@
   align-items: flex-start;
   flex-direction: column;
 }
+
 .jobs-current {
   font-size: 14px;
   font-weight: 300;
 }
-.jobs-flex div{
+
+.jobs-flex div {
   font-weight: 400;
 }
+
 .job-summary {
   line-height: 1.5;
 }
+
 .job-highlights {
   list-style: none;
   font-weight: 200;
 }
 
-
 @media (min-width: 991px) {
   .Card-Container {
     overflow: auto;
   }
-  .Header-Container, .Card-Container {
+  .Header-Container,
+  .Card-Container {
     height: 100vh;
   }
- 
-  .Card-content{
+  .Card-content {
     height: 100vh;
   }
 }
+
 @media (max-width: 990px) {
-  .App{
+  .App {
     flex-direction: column;
   }
-  .Header-Container, .Card-Container {
+  .Header-Container,
+  .Card-Container {
     width: 100vw;
   }
-  .Header-Container{
+  .Header-Container {
     font-size: 24px;
     height: 100vh;
   }
 }
+
 @media (max-width: 450px) {
-  .Header-Container{
+  .Header-Container {
     font-size: 18px;
   }
   .Header-Container .Header-content {
