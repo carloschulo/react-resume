@@ -16,7 +16,7 @@
    flex-direction: row;
    font-size: 12px;
    position: absolute;
-   top: 5%;
+   top: 1%;
  }
 .Header-Container, .Card-Container {
   display: flex;
