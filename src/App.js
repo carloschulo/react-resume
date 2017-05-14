@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
+import SkillList from './components/SkillList'
 import Card from './components/Card';
 import School from './components/School';
 import Contact from './components/Contact';
@@ -14,23 +15,26 @@ class App extends Component {
         <div className="App">
           <Header resumeObj={resume} className="Left"/>
           
-            <Route exact path={'/'} render={({ match }) => <Card resumeObj={resume} />}/>
-            <Route exact path={'/🎒'} render={({ match }) => <School education={resume.education[0]} />}/>
-            <Route exact path={'/📧'} render={({ match }) => <Contact info={resume.basics} />}/>
-        
-{/*          <Card resumeObj={resume} />
-*/}          
-            <ul className="App__pages">
-              <li>
-                <NavLink exact to={'/'} activeStyle={{fontWeight: 'bold',color: '#333'}}>Work</NavLink>
-              </li>
-              <li>
-                <NavLink exact to={'/🎒'} activeStyle={{fontWeight: 'bold',color: 'red'}}>Education</NavLink>
-              </li>
-              <li>
-                <NavLink exact to={'/📧'} activeStyle={{fontWeight: 'bold',color: 'red'}}>Contact</NavLink>
-              </li>
-            </ul>
+          <Route exact path={'/'} render={({ match }) => <Card resumeObj={resume} />}/>
+          <Route exact path={'/💻'} render={({ match }) => <SkillList resumeObj={resume} />}/>
+          <Route exact path={'/🎒'} render={({ match }) => <School education={resume.education[0]} />}/>
+          <Route exact path={'/📧'} render={({ match }) => <Contact info={resume.basics} />}/>
+         
+        {/*Nav Menu*/}
+          <ul className="App__pages">
+            <NavLink exact to={'/'} activeStyle={{fontWeight: 'bold'}} style={{color: 'white'}}>
+              <li className="chips blue">Work</li>
+            </NavLink>
+            <NavLink exact to={'/💻'} activeStyle={{fontWeight: 'bold'}} style={{color: 'white'}}>
+              <li className="chips blue">Skills</li>
+            </NavLink>
+            <NavLink exact to={'/🎒'} activeStyle={{fontWeight: 'bold'}} style={{color: 'white'}}>
+              <li className="chips blue">Education</li>
+            </NavLink>
+            <NavLink exact to={'/📧'} activeStyle={{fontWeight: 'bold'}} style={{color: 'white'}}>
+              <li className="chips blue">Contact</li>
+            </NavLink>
+          </ul>
            
         </div>
       </Router>

@@ -88,10 +88,10 @@
   }],
   "education": [{
     "institution": "University of Maryland",
-    "area": "Business",
-    "studyType": "Bachelor",
-    "startDate": "2003-09-01",
-    "endDate": "2009-05-01",
+    "area": "Commercial Spanish",
+    "studyType": "Bachelors",
+    "startDate": "2003",
+    "endDate": "2009",
     "gpa": "3.0",
     "courses": [
       "Java - Basic SQL"
@@ -117,10 +117,18 @@
       "HTML5",
       "CSS3",
       "Javascript",
+      "ES6",
       "React JS",
+      "React Router",
       "Node JS",
       "SASS",
-      "ES6"
+      "SCSS",
+      "jQuery",
+      "MySQL",
+      "Mongo DB",
+      "Git",
+      "Firebase"
+
     ]
   },
   "languages": [{

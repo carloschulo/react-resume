@@ -21,19 +21,14 @@
 
 .App__pages{
   position: absolute;
-  left: 15%;
+  left: 0;
   top: 0;
   list-style: none;
   display: flex;
 }
 
-.App__pages li {
-  padding: 20px;
-}
-
 .App__pages a {
   text-decoration: none;
-  color: #333;
 }
 
 .made-with-react {
@@ -43,10 +38,12 @@
   font-size: 10px;
   position: absolute;
   top: 1%;
+  display: none;
 }
 
 .Header-Container,
-.Card-Container {
+.Card-Container,
+.Modal-Container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +57,7 @@
   position: relative;
 }
 
-.Card-Container {
+.Card-Container, .Modal-Container {
   width: 60%;
 }
 
@@ -70,7 +67,7 @@
   flex-direction: column;
 }
 
-.Header-Container .Header-name {
+.Header-name {
   font-weight: 900;
   color: #4a4a4a;
 }
@@ -83,19 +80,24 @@
   font-weight: 200;
 }
 
-.Header-Container .Skills-list {
+.Skills-list {
   display: flex;
   flex-flow: row wrap;
   list-style: none;
 }
 
-.Header-Container .Skills-list .Skills-chips {
+.chips {
   margin: 3px 5px 3px 0;
-  background: #3b80fe;
   color: white;
   padding: 9px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   border-radius: 2px;
+}
+.chips.blue {
+  background: #3b80fe;
+}
+.chips.teal {
+  background: #54E7C7;
 }
 
 .Card-content {
@@ -137,7 +139,8 @@
     overflow: auto;
   }
   .Header-Container,
-  .Card-Container {
+  .Card-Container,
+  .Modal-Container {
     height: 100vh;
   }
   .Card-content {
@@ -172,4 +175,24 @@
     margin: 3px 5px 3px 0;
     padding: 9px;
   }
+}
+
+/*Animate below*/
+
+.slide-enter {
+   opacity: 0.01;
+}
+
+.slide-enter.slide-enter-active {
+  opacity: 1;
+  transition: opacity 5000ms ease-in;
+}
+
+.slide-leave {
+  opacity: 1;
+}
+
+.slide-leave.slide-leave-active {
+  opacity: 0.01;
+  transition: opacity 3000ms ease-in;
 }
