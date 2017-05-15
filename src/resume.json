@@ -5,9 +5,9 @@
     "label": "Front End Developer",
     "picture": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAArqAAAAJDE2YTU4NGM3LWI5ZmEtNGQyNS1hMGVkLTAwYTJhOTFmMTkwNA.jpg",
     "email": "carlos@carlosrh.com",
-    "phone": "(301) 512-5796",
-    "website": "https://carlosrh.com/",
-    "summary": "Carlos is a Front End Developer at The Children's Place working on their e-commerce platform.",
+    "phone": "none",
+    "website": "https://carlosrh.com",
+    "summary": "Front End Developer seeking to work closely with a highly motivated team to apply experience in Web Development by leveraging new and existing technologies, and implementing effective solutions.",
     "location": {
       "address": "NO Street addres",
       "postalCode": "100012",
@@ -88,10 +88,10 @@
   }],
   "education": [{
     "institution": "University of Maryland",
-    "area": "Business",
-    "studyType": "Bachelor",
-    "startDate": "2003-09-01",
-    "endDate": "2009-05-01",
+    "area": "Commercial Spanish",
+    "studyType": "Bachelors",
+    "startDate": "2003",
+    "endDate": "2009",
     "gpa": "3.0",
     "courses": [
       "Java - Basic SQL"
@@ -117,10 +117,18 @@
       "HTML5",
       "CSS3",
       "Javascript",
+      "ES6",
       "React JS",
+      "React Router",
       "Node JS",
       "SASS",
-      "ES6"
+      "SCSS",
+      "jQuery",
+      "MySQL",
+      "Mongo DB",
+      "Git",
+      "Firebase"
+
     ]
   },
   "languages": [{

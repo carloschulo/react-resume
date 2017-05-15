@@ -4,7 +4,7 @@ class Skills extends Component {
   render() {
     // console.log(this.props.details)
     return (
-      <li className="Skills-chips">
+      <li className="chips blue">
         {this.props.details}
       </li>
     );

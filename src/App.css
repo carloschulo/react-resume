@@ -1,24 +1,49 @@
 .App {
   display: flex;
   flex-direction: row;
+  position: relative;
+  overflow: hidden;
 }
+
 .App-logo {
-   animation: App-logo-spin infinite 20s linear;
-   height: 40px;
- }
- @keyframes App-logo-spin {
-   from { transform: rotate(0deg); }
-   to { transform: rotate(360deg); }
- }
- .made-with-react {
-   display: flex;
-   align-items: center;
-   flex-direction: row;
-   font-size: 12px;
-   position: absolute;
-   top: 1%;
- }
-.Header-Container, .Card-Container {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App__pages{
+  position: absolute;
+  z-index: 100;
+  left: 2%;
+  top: 1%;
+  list-style: none;
+  display: flex;
+}
+
+.App__pages a {
+  text-decoration: none;
+}
+
+.made-with-react {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 10px;
+  /*position: absolute;
+  top: 1%;*/
+}
+
+.Header-Container,
+.Card-Container,
+.Modal-Container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,42 +56,55 @@
   padding: 30px;
   position: relative;
 }
-.Card-Container {
+
+.Card-Container, .Modal-Container {
   width: 60%;
 }
+
 .Header-Container .Header-content {
   /*margin: 0 127px 0 30px;*/
   display: flex;
   flex-direction: column;
 }
-.Header-Container .Header-name {
+
+.Header-name {
   font-weight: 900;
   color: #4a4a4a;
 }
+
 .Header-Container .Header-label {
   font-weight: 300;
 }
+
 .Header-Container .Header-desc {
   font-weight: 200;
 }
-.Header-Container .Skills-list {
+
+.Skills-list {
   display: flex;
   flex-flow: row wrap;
   list-style: none;
 }
-.Header-Container .Skills-list .Skills-chips {
+
+.chips {
   margin: 3px 5px 3px 0;
-  background: #3b80fe;
   color: white;
   padding: 9px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   border-radius: 2px;
 }
-.Card-content{
+.chips.blue {
+  background: #3b80fe;
+}
+.chips.teal {
+  background: #54E7C7;
+}
+
+.Card-content {
   width: 100%;
 }
 
-.Jobs-container{
+.Jobs-container {
   background: #54E7C7;
   color: #fafafa;
   width: 100%;
@@ -77,48 +115,82 @@
   align-items: flex-start;
   flex-direction: column;
 }
+
 .jobs-current {
   font-size: 14px;
   font-weight: 300;
 }
-.jobs-flex div{
+
+.jobs-flex div {
   font-weight: 400;
 }
+
 .job-summary {
   line-height: 1.5;
 }
+
 .job-highlights {
   list-style: none;
   font-weight: 200;
 }
 
-
 @media (min-width: 991px) {
   .Card-Container {
     overflow: auto;
   }
-  .Header-Container, .Card-Container {
+  .Header-Container,
+  .Card-Container,
+  .Modal-Container {
     height: 100vh;
   }
- 
-  .Card-content{
+  .Card-content {
     height: 100vh;
+  }
+  .bg-gray {
+    background: #fafafa;
+  }
+  .down-here {
+    display: none;
   }
 }
+
 @media (max-width: 990px) {
-  .App{
+  .App {
     flex-direction: column;
   }
-  .Header-Container, .Card-Container {
+  .Header-Container,
+  .Card-Container {
     width: 100vw;
   }
-  .Header-Container{
+  .Header-Container {
     font-size: 24px;
     height: 100vh;
   }
+  .Modal-Container {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+
+/* Modal Content/Box */
+.Modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    /*border: 1px solid #888;*/
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+}
+
 @media (max-width: 450px) {
-  .Header-Container{
+  .Header-Container {
     font-size: 18px;
   }
   .Header-Container .Header-content {
@@ -130,4 +202,121 @@
     margin: 3px 5px 3px 0;
     padding: 9px;
   }
+}
+
+/*Animate below*/
+
+.slide-enter {
+   opacity: 0.01;
+}
+
+.slide-enter.slide-enter-active {
+  opacity: 1;
+  transition: opacity 5000ms ease-in;
+}
+
+.slide-leave {
+  opacity: 1;
+}
+
+.slide-leave.slide-leave-active {
+  opacity: 0.01;
+  transition: opacity 3000ms ease-in;
+}
+
+/*more animations*/
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s;
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: .7;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    opacity: .95;
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
 }
