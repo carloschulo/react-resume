@@ -8,6 +8,7 @@ class Card extends Component {
    
     return (
       <div className="Card-Container">
+      <h2 className="down-here animated bounce infinite">⬇ Down Here ⬇</h2>
         <div className="Card-content">
          {
             work

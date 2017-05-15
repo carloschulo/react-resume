@@ -22,17 +22,17 @@ class App extends Component {
          
         {/*Nav Menu*/}
           <ul className="App__pages">
-            <NavLink exact to={'/'} activeStyle={{fontWeight: 'bold'}} style={{color: 'white'}}>
-              <li className="chips blue">Work</li>
+            <NavLink exact to={'/'} activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}} className="chips blue">
+              Work
             </NavLink>
-            <NavLink exact to={'/💻'} activeStyle={{fontWeight: 'bold'}} style={{color: 'white'}}>
-              <li className="chips blue">Skills</li>
+            <NavLink exact to={'/💻'} activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}} className="chips blue">
+              Skills
             </NavLink>
-            <NavLink exact to={'/🎒'} activeStyle={{fontWeight: 'bold'}} style={{color: 'white'}}>
-              <li className="chips blue">Education</li>
+            <NavLink exact to={'/🎒'} activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}} className="chips blue">
+              Education
             </NavLink>
-            <NavLink exact to={'/📧'} activeStyle={{fontWeight: 'bold'}} style={{color: 'white'}}>
-              <li className="chips blue">Contact</li>
+            <NavLink exact to={'/📧'} activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}} className="chips blue">
+              Contact
             </NavLink>
           </ul>
            
