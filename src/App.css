@@ -8,6 +8,7 @@
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40px;
+  vertical-align: middle;
 }
 
 @keyframes App-logo-spin {
@@ -23,7 +24,7 @@
   position: absolute;
   z-index: 100;
   left: 2%;
-  top: 1%;
+  top: 0%;
   list-style: none;
   display: flex;
 }
@@ -202,6 +203,22 @@
     margin: 3px 5px 3px 0;
     padding: 9px;
   }
+}
+@media (min-width: 371px) {
+  
+  .onlyforiphoneSE {
+    display: none;
+  }
+
+}
+@media (max-width: 370px) {
+  .App__pages{
+    display: none;
+  }
+  .made-with-react .onlyforiphoneSE {
+    display: block;
+  }
+
 }
 
 /*Animate below*/

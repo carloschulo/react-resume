@@ -28,6 +28,7 @@ class Header extends Component {
             <img src={logo} className="App-logo" alt="Made With React Logo"/>
             </a>
           </div>
+          <a className="onlyforiphoneSE" href="mailto:carlos@carlosrh.com?subject=Resume%20Inquiry" style={{color: '#4a4a4a',textDecoration: 'none'}}>Contact me</a>
         
         </div>
       </div>
